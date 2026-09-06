@@ -1,11 +1,11 @@
-# postbase-py
+# postbasepy
 
 The official Python client for [Postbase](https://www.getpostbase.com) — a self-hosted, open-source backend as a service.
 
 [![PyPI version](https://img.shields.io/pypi/v/postbase)](https://pypi.org/project/postbase/)
-[![license](https://img.shields.io/pypi/l/postbase)](https://github.com/harshalone/postbase/blob/main/LICENSE)
+[![license](https://img.shields.io/pypi/l/postbase)](https://github.com/harshalone/postbasepy/blob/main/LICENSE)
 
-> **[getpostbase.com](https://www.getpostbase.com)** · [Documentation](https://www.getpostbase.com/docs) · [GitHub](https://github.com/harshalone/postbase)
+> **[getpostbase.com](https://www.getpostbase.com)** · [Documentation](https://www.getpostbase.com/docs) · [GitHub](https://github.com/harshalone/postbasepy)
 
 ---
 
