@@ -2,9 +2,9 @@ import httpx
 import pytest
 import respx
 
-from postbase import CookieAdapter, create_client
-from postbase.aio import create_async_client
-from postbase.types import Cookie
+from postbasepy import CookieAdapter, create_client
+from postbasepy.aio import create_async_client
+from postbasepy.types import Cookie
 
 
 @respx.mock
@@ -54,7 +54,7 @@ def test_set_session_writes_cookie_with_refresh_ttl():
     adapter = CookieAdapter(get_all=lambda: [], set_all=set_all)
     client = create_client("https://example.com", "pb_anon_test", cookies=adapter)
 
-    from postbase.types import AuthUser, Session
+    from postbasepy.types import AuthUser, Session
 
     session = Session(
         access_token="at",

@@ -1,4 +1,4 @@
-from postbase._internal import (
+from postbasepy._internal import (
     apply_aliases,
     parse_columns,
     parse_or_filter_string,

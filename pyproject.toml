@@ -1,5 +1,5 @@
 [project]
-name = "postbase"
+name = "postbasepy"
 version = "0.1.0"
 description = "The official Python client for Postbase — self-hosted backend as a service"
 readme = "README.md"

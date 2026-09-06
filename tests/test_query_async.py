@@ -2,7 +2,7 @@ import httpx
 import pytest
 import respx
 
-from postbase.aio import create_async_client
+from postbasepy.aio import create_async_client
 
 pytestmark = pytest.mark.asyncio
 

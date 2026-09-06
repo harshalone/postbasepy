@@ -1,7 +1,7 @@
 import httpx
 import respx
 
-from postbase import create_client
+from postbasepy import create_client
 
 
 @respx.mock

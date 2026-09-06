@@ -6,7 +6,7 @@ security.
 
 Quick start (sync)::
 
-    from postbase import create_client
+    from postbasepy import create_client
 
     postbase = create_client(
         "https://your-postbase-instance.com",
@@ -17,7 +17,7 @@ Quick start (sync)::
 
 Quick start (async)::
 
-    from postbase.aio import create_async_client
+    from postbasepy.aio import create_async_client
 
     postbase = create_async_client(
         "https://your-postbase-instance.com",

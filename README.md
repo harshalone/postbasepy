@@ -2,8 +2,8 @@
 
 The official Python client for [Postbase](https://www.getpostbase.com) — a self-hosted, open-source backend as a service.
 
-[![PyPI version](https://img.shields.io/pypi/v/postbase)](https://pypi.org/project/postbase/)
-[![license](https://img.shields.io/pypi/l/postbase)](https://github.com/harshalone/postbasepy/blob/main/LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/postbasepy)](https://pypi.org/project/postbasepy/)
+[![license](https://img.shields.io/pypi/l/postbasepy)](https://github.com/harshalone/postbasepy/blob/main/LICENSE)
 
 > **[getpostbase.com](https://www.getpostbase.com)** · [Documentation](https://www.getpostbase.com/docs) · [GitHub](https://github.com/harshalone/postbasepy)
 
@@ -78,11 +78,11 @@ Postbase is a self-hosted backend platform built on PostgreSQL. It gives you a d
 ## Installation
 
 ```bash
-pip install postbase
+pip install postbasepy
 # or
-uv add postbase
+uv add postbasepy
 # or
-poetry add postbase
+poetry add postbasepy
 ```
 
 Requires Python 3.9+. Built on [`httpx`](https://www.python-httpx.org/), so both sync and async clients share one dependency.
@@ -94,7 +94,7 @@ Requires Python 3.9+. Built on [`httpx`](https://www.python-httpx.org/), so both
 **Sync:**
 
 ```python
-from postbase import create_client
+from postbasepy import create_client
 
 postbase = create_client(
     "https://your-postbase-instance.com",
@@ -109,7 +109,7 @@ print(result.data, result.error)
 **Async:**
 
 ```python
-from postbase.aio import create_async_client
+from postbasepy.aio import create_async_client
 
 postbase = create_async_client(
     "https://your-postbase-instance.com",
@@ -629,7 +629,7 @@ result = postbase.email.send(
 When running behind a web framework (FastAPI, Flask, Django, etc.), you can forward the caller's session cookie to Postbase so RLS policies evaluate against the authenticated user instead of just the anon role. Implement a `CookieAdapter` bridging your framework's request/response to Postbase:
 
 ```python
-from postbase import CookieAdapter, Cookie, create_client
+from postbasepy import CookieAdapter, Cookie, create_client
 
 def get_all():
     # Read cookies off the incoming request (framework-specific)
@@ -715,7 +715,7 @@ The SDK is fully type-annotated. Query results are `QueryResult[T]` / `SingleRes
 
 ```python
 from dataclasses import dataclass
-from postbase import create_client
+from postbasepy import create_client
 
 @dataclass
 class Post:
