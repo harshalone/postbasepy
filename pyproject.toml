@@ -1,6 +1,6 @@
 [project]
 name = "postbasepy"
-version = "0.1.0"
+version = "0.1.1"
 description = "The official Python client for Postbase — self-hosted backend as a service"
 readme = "README.md"
 authors = [
