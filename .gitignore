@@ -16,3 +16,8 @@ wheels/
 .coverage
 htmlcov/
 
+# Secrets
+.env
+.env.*
+!.env.example
+
